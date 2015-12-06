@@ -1,0 +1,135 @@
+/*CSS Stylesheet*/
+
+/** {border: 1px solid black;}*/
+
+body {
+    margin: 0;
+    background-color: black;
+}
+img {
+    max-width: 100%;
+}
+
+#main
+{background-image: url(main.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index:10;
+    background-size: contain;
+    top: 200px;
+}
+
+
+#bridge1
+{background-image: url(bridge1.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index:9;
+    background-size: contain;
+    top: 200px;
+    animation: 40s parallax infinite linear;
+}
+
+
+#bridge3
+{background-image: url(bridge3.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index:8;
+    background-size: contain;
+    top: 300px;
+    animation: 50s parallax infinite linear;
+}
+
+
+#bridge4
+{background-image: url(bridge4.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index:7;
+    background-size: contain;
+    top: 300px;
+    animation: 30s parallax infinite linear;
+}
+
+
+#people
+{background-image: url(people.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index:12;
+    background-size: contain;
+    top: 526px;
+animation: 3s parallax infinite linear;
+}
+
+
+#people
+{background-image: url(people.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    z-index:70;
+    background-size: contain;
+    top: 540px;
+    left: 300px;
+    animation: parallax 100s linear infinite;
+}
+
+@keyframes parallax {
+	50% {
+		background-position: 
+			
+            -400px -10%,
+			-800px 20%,
+			-100px 50%,
+			-10000px 20%,
+			-400px 0;
+		}
+/*
+    100% {
+		background-position: 
+			
+            4000px 10%,
+			800px 95%,
+			-1000px 100%,
+			-1000px 100%,
+			-400px 100%;
+		}
+*/
+	}
+
+
+#sky
+{background-image: url(sky.png);
+    background-repeat: no-repeat;
+    width: 1050%;
+    height: 1000%;
+    position: absolute;
+    z-index:1;
+    background-size: contain;
+    bottom: 100px;
+    left: -600px;
+    animation: sky 50s linear infinite;
+    opacity: .7;
+}
+
+@keyframes sky {
+  0% {background-position: 0px 0px, 90px 0px, 0px 150px;}
+  50% {background-position: 500px 1000px, 100px 1000px, -100px 1000px;}
+  100% {background-position: -500px -1800px, -200px -2000px, 100px -2400px;}
+}
+
+
+
